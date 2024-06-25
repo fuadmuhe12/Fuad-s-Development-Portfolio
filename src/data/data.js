@@ -1,5 +1,12 @@
 import React from "react";
-
+import { IoLogoWordpress } from "react-icons/io";
+import {
+  SiDjango,
+  SiReact,
+  SiTypescript,
+  SiDocker,
+  SiJenkins,
+} from "react-icons/si";
 // react icons
 import { FiGrid, FiLinkedin } from "react-icons/fi";
 import { VscProject } from "react-icons/vsc";
@@ -45,12 +52,12 @@ const sideBarMenu = [
 const socialIcons = [
   {
     icon: <GrGithub className="icon switch__color" />,
-    url: "https://github.com/47thommy ",
+    url: "https://github.com/Emran-Y/",
   },
 
   {
     icon: <FiLinkedin className="icon switch__color" />,
-    url: "www.linkedin.com/in/thomas-wondwosen-bb40431ba",
+    url: "https://www.linkedin.com/in/emran-yonas-230192232/",
   },
 ];
 // programming lanuages (spanText), icons and url
@@ -69,6 +76,28 @@ const skillSet = [
     icon: <IoLogoJavascript className="skills-icon switch__color" />,
     spanText: "JAVASCRIPT",
     url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript",
+  },
+  // typescript
+  {
+    icon: <SiTypescript className="skills-icon switch__color" />,
+    spanText: "TYPESCRIPT",
+    url: "https://www.typescriptlang.org/docs/",
+  },
+  // wordpress
+  {
+    icon: <IoLogoWordpress className="skills-icon switch__color" />,
+    spanText: "WORDPRESS",
+    url: "https://wordpress.org/support/article/wordpress-lessons/",
+  },
+  {
+    icon: <SiDjango className="skills-icon switch__color" />,
+    spanText: "DJANGO",
+    url: "https://docs.djangoproject.com/en/stable/",
+  },
+  {
+    icon: <SiReact className="skills-icon switch__color" />,
+    spanText: "REACT NATIVE",
+    url: "https://reactnative.dev/docs/getting-started",
   },
   {
     icon: <SiSass className="skills-icon switch__color" />,
@@ -119,6 +148,16 @@ const skillSet = [
     icon: <BsGoogle className="skills-icon switch__color" />,
     spanText: "Googling",
     url: "https://google.com",
+  },
+  {
+    icon: <SiDocker className="skills-icon switch__color" />,
+    spanText: "DOCKER",
+    url: "https://docs.docker.com/get-started/",
+  },
+  {
+    icon: <SiJenkins className="skills-icon switch__color" />,
+    spanText: "CI/CD",
+    url: "https://www.redhat.com/en/topics/devops/what-is-ci-cd",
   },
 ];
 

@@ -1,5 +1,5 @@
 import React from "react";
-import myCV from "../../assets/images/Thomas's CV.pdf";
+import myCV from "../../assets/images/Emran-Yonas.pdf";
 import Reveal from "react-reveal/Reveal";
 import Fade from "react-reveal/Fade";
 
@@ -47,10 +47,10 @@ const About = () => {
             </h2>
             <Fade bottom>
               <p>
-                I'm a full-stack developer and machine learning engineer,
-                passionate about crafting innovative solutions. My journey in
-                technology spans web development and machine learning, driven by
-                a love for creative problem-solving.
+                I'm a full-stack developer with a background in computer
+                science, passionate about crafting innovative solutions. My
+                journey in technology spans web development and mobile app
+                development, driven by a love for creative problem-solving.
               </p>
             </Fade>
             <Fade bottom>

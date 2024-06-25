@@ -55,7 +55,7 @@ const Sidebar = React.memo(() => {
               />
             </svg>
             <span className="switch__color" style={{ fontSize: "1.3rem" }}>
-              Thomas
+              Emran
             </span>
           </Link>
           <ul className="side-link">

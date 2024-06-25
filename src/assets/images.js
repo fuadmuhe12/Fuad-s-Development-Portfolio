@@ -4,3 +4,7 @@ export { default as prog3 } from "../assets/images/prog3.png";
 export { default as prog4 } from "../assets/images/prog4.png";
 export { default as prog5 } from "../assets/images/prog5.png";
 export { default as prog6 } from "../assets/images/prog6.png";
+export { default as prog7 } from "../assets/images/prog7.png";
+export { default as prog8 } from "../assets/images/prog8.png";
+export { default as prog9 } from "../assets/images/prog9.png";
+export { default as prog10 } from "../assets/images/prog10.png";

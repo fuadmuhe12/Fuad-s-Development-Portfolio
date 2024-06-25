@@ -1,10 +1,71 @@
 import { GrGithub } from "react-icons/gr";
 import { TbWorld } from "react-icons/tb";
 
-import { prog1, prog2, prog3, prog4, prog5, prog6 } from "../../assets/images";
+import {
+  prog1,
+  prog2,
+  prog3,
+  prog4,
+  prog5,
+  prog6,
+  prog7,
+  prog8,
+  prog9,
+  prog10,
+} from "../../assets/images";
 
 // projects data
 export const projects = [
+  {
+    id: 2,
+    name: "Berkely Square Medical",
+    desc: "A website built for a largest private medical clinic in the UK, to boost their online presence and increase sales",
+    stack: "Wordpress custom theme, tailwindcss, google analytics",
+    imgUrl: prog9,
+    website: {
+      icon: <TbWorld />,
+      url: "https://www.berkeleysquaremedical.com/",
+    },
+  },
+  {
+    id: 2,
+    name: "Electic Car Charges UK",
+    desc: "A webiste innovatively crafted for electric car charging company",
+    stack: "Wordpress custom theme, tailwindcss, google analytics",
+    imgUrl: prog10,
+    website: {
+      icon: <TbWorld />,
+      url: "https://www.electriccarchargersuk.co.uk/",
+    },
+  },
+  {
+    id: 2,
+    name: "Electic Car Charges UK  Admin Panel",
+    desc: "A professional admin panel for ecc company to manage their users, products and orders",
+    stack: "Next JS, MYSQL,Prisma ORM, Tailwindcss",
+    imgUrl: prog8,
+    website: {
+      icon: <TbWorld />,
+      url: "https://ecc-admin-dashboard.vercel.app/",
+    },
+  },
+  {
+    id: 2,
+    name: "Tufan Pharmacy",
+    desc: "A professional website buile to boost companines online presence and increase sales",
+    stack:
+      "Html, Css, Javascript, Tailwindcss,Strapi CMS,Express js, google analytics",
+    imgUrl: prog7,
+
+    gitHubUrl: {
+      icon: <TbWorld />,
+      url: "https://tufahpharma.onrender.com/",
+    },
+    website: {
+      icon: <TbWorld />,
+      url: "https://wonders-of-ethiopia.vercel.app/",
+    },
+  },
   {
     id: 2,
     name: "Tour Booking",

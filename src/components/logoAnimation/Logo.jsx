@@ -1,16 +1,16 @@
-import React from 'react'
-import './logo.scss'
-import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin'
-import gsap from 'gsap'
+import React from "react";
+import "./logo.scss";
+import { DrawSVGPlugin } from "gsap-trial/DrawSVGPlugin";
+import gsap from "gsap";
 
 const Logo = () => {
-  const bgRef = React.useRef()
-  const outLineRef = React.useRef()
-  const outLineRef2 = React.useRef()
-  const solidLogoRef = React.useRef()
+  const bgRef = React.useRef();
+  const outLineRef = React.useRef();
+  const outLineRef2 = React.useRef();
+  const solidLogoRef = React.useRef();
 
   React.useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin)
+    gsap.registerPlugin(DrawSVGPlugin);
     setTimeout(() => {
       gsap
         .timeline()
@@ -25,7 +25,7 @@ const Logo = () => {
         .from(outLineRef2.current, {
           drawSVG: 0,
           duration: 4,
-        })
+        });
       gsap.fromTo(
         solidLogoRef.current,
         {
@@ -35,10 +35,10 @@ const Logo = () => {
           opacity: 0.065,
           delay: 4,
           duration: 10,
-        },
-      )
-    }, 4000)
-  }, [])
+        }
+      );
+    }, 4000);
+  }, []);
 
   return (
     <div className="logo-container switch__stroke-color" ref={bgRef}>
@@ -74,7 +74,7 @@ const Logo = () => {
         />
       </svg>
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

@@ -83,7 +83,7 @@ const Contact = React.memo(() => {
     }
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     const { email, message } = validInpt;
     // const pattern = /^[^]+@[^]+\.[a-z]{2,3}$/
@@ -107,22 +107,42 @@ const Contact = React.memo(() => {
       setError(TextAreaRef);
       showMessage("please! Send a message");
     } else if (email && message) {
-      emailjs.sendForm(
-        "service_hzuhgnn",
-        "template_d1vclpy",
-        form.current,
-        "IhUadXpJiejAjhpYJlJ09"
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx38Uy0qFctCnX2_f_m3U-75yvYlJ0wI6zmiF7yV_yEwGWG99g15oJ6YHsgHjR9-1J4Sg/exec";
+      const formData = new FormData();
+      formData.append("Name", validInpt.name);
+      formData.append("Email", validInpt.email);
+      formData.append(
+        "Message",
+        "Suject" +
+          "=>" +
+          validInpt.subject +
+          "|" +
+          "Message" +
+          "=>" +
+          validInpt.message
       );
-      setSuccess(emailRef);
-      setSuccess(TextAreaRef);
-      showMessage("Message sent successfully", "green");
 
-      setValidInpt({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
+      try {
+        const response = await fetch(scriptURL, {
+          method: "POST",
+          body: formData,
+        });
+        if (response.ok) {
+          setSuccess(emailRef);
+          setSuccess(TextAreaRef);
+          showMessage("Message sent successfully", "green");
+
+          setValidInpt({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        }
+      } catch (error) {
+        console.error("Error!", error.message);
+      }
     }
   };
 
@@ -141,9 +161,10 @@ const Contact = React.memo(() => {
             </h2>
             <Fade bottom>
               <p>
-                I’m interested in freelance opportunities and I am always ready
-                to build projects at anytime, if you have any job offer for me,
-                you could use the form below to react out to me.
+                I’m interested in freelance and remote job opportunities and I
+                am always ready to build projects at anytime, if you have any
+                job offer for me, you could use the form below to react out to
+                me.
               </p>
             </Fade>
           </div>
@@ -224,7 +245,11 @@ const Contact = React.memo(() => {
           </Fade>
           <Reveal bottom>
             <footer className="footer">
-              <p> &copy; copyright All Right Reserved 47thommy - 2023</p>
+              <p>
+                {" "}
+                &copy; copyright All Right Reserved Emran -{" "}
+                {new Date().getFullYear()}
+              </p>
             </footer>
           </Reveal>
         </form>

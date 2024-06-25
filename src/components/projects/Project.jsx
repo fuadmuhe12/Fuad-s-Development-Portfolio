@@ -13,12 +13,15 @@ const Project = (props) => {
           <p className="desc">{desc}</p>
           <div className="section__projects-stack">
             <h2>Built with</h2>
-            <span>{stack}</span>
+            <span
+              style={{
+                fontSize: "0.8rem",
+              }}
+            >
+              {stack}
+            </span>
           </div>
           <div className="section__projects-icon">
-            <a href={gitHubUrl.url} target="_blank" className="switch__color">
-              {gitHubUrl.icon}
-            </a>
             <a href={website.url} target="_blank" className="switch__color">
               {website.icon}
             </a>
