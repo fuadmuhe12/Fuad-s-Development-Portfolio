@@ -56,9 +56,7 @@ const About = () => {
             <Fade bottom>
               <p>
                 I excel in web development, from front-end interfaces to
-                scalable back-end systems. I also thrive in machine learning,
-                leveraging algorithms for impactful projects, such as natural
-                language processing and computer vision.
+                scalable back-end systems. I also thrive in mobile app development.
               </p>
             </Fade>
             <Fade bottom>

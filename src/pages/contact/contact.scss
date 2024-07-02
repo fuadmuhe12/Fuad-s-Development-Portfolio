@@ -5,6 +5,12 @@
   position: relative;
   z-index: 1;
 }
+// for screen size less than 450px add margin-top of 2700px for contact-section class
+@media screen and (max-width: 450px) {
+  .contact-section {
+    margin-top: 2700px;
+  }
+}
 .contact__heading {
   display: block;
   font-size: 2rem;
