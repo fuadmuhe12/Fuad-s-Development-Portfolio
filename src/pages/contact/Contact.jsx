@@ -161,10 +161,9 @@ const Contact = React.memo(() => {
             </h2>
             <Fade bottom>
               <p>
-                I’m interested in freelance and remote job opportunities and I
-                am always ready to build projects at anytime, if you have any
-                job offer for me, you could use the form below to react out to
-                me.
+                I’m open to freelance and remote job opportunities and am ready
+                to start new projects at any time. If you have a job offer,
+                please use the form below to get in touch with me.
               </p>
             </Fade>
           </div>
@@ -247,7 +246,7 @@ const Contact = React.memo(() => {
             <footer className="footer">
               <p>
                 {" "}
-                &copy; copyright All Right Reserved Emran -{" "}
+                &copy; copyright All Right Reserved Fuad Mohammed -{" "}
                 {new Date().getFullYear()}
               </p>
             </footer>

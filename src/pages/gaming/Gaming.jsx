@@ -1,59 +1,59 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import SingleGame from '../../components/singleGame/SingleGame'
-import { Pagination, Autoplay } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { BiSearch } from 'react-icons/bi'
+import React, { useState, useEffect, useCallback } from "react";
+import SingleGame from "../../components/singleGame/SingleGame";
+import { Pagination, Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { BiSearch } from "react-icons/bi";
 
-import CircleLoader from 'react-spinners/CircleLoader'
+import CircleLoader from "react-spinners/CircleLoader";
 
 // Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/navigation'
+import "swiper/css";
+import "swiper/css/navigation";
 
-import asphalt from '../../assets/images/asphalt.jpg'
-import sniper from '../../assets/images/sniper.jpg'
-import maxresdefault from '../../assets/images/maxresdefault.jpg'
-import mario from '../../assets/images/mario.jpg'
-import pes5 from '../../assets/images/pes5.jpeg'
+import asphalt from "../../assets/images/asphalt.jpg";
+import sniper from "../../assets/images/sniper.jpg";
+import maxresdefault from "../../assets/images/maxresdefault.jpg";
+import mario from "../../assets/images/mario.jpg";
+import pes5 from "../../assets/images/pes5.jpeg";
 
-import { useFetch } from '../../hooks/useFetch'
-import './gaming.scss'
-const url1 = `https://api.rawg.io/api/games?key=b432c428c59c4092a25f1d4638721dae&search_exact=true`
+import { useFetch } from "../../hooks/useFetch";
+import "./gaming.scss";
+const url1 = `https://api.rawg.io/api/games?key=b432c428c59c4092a25f1d4638721dae&search_exact=true`;
 
 const Gaming = React.memo(() => {
-  const { loading, setLoading } = useFetch(url1)
-  const [games, setGames] = useState([])
-  const [searchTerm, setSearchTerm] = useState('')
+  const { loading, setLoading } = useFetch(url1);
+  const [games, setGames] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const fetchGames = useCallback(
     async (title) => {
       try {
-        setLoading(true)
-        const response = await fetch(`${url1}&search=${title}`)
+        setLoading(true);
+        const response = await fetch(`${url1}&search=${title}`);
         if (!response.ok) {
           let msg = `There was a problem while fetching the data
-         ${response.statusText} ${response.status}`
-          throw new Error(msg)
+         ${response.statusText} ${response.status}`;
+          throw new Error(msg);
         } else {
-          const data = await response.json()
-          setGames(data.results[2].tags)
-          setLoading(false)
+          const data = await response.json();
+          setGames(data.results[2].tags);
+          setLoading(false);
         }
       } catch (error) {
-        console.log(error.message)
+        console.log(error.message);
       }
     },
-    [setLoading],
-  )
+    [setLoading]
+  );
 
   useEffect(() => {
-    fetchGames()
-  }, [fetchGames])
+    fetchGames();
+  }, [fetchGames]);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setSearchTerm('')
-  }
+    e.preventDefault();
+    setSearchTerm("");
+  };
 
   return (
     <>
@@ -110,9 +110,10 @@ const Gaming = React.memo(() => {
             </Swiper>
           </div>
           <p>
-            The action game is a genre that includes fights, puzzles, and
-            strategies emphasizing coordination and reaction. It includes a
-            large variety of sub-genres like fighting, beat 'em ups, shooters,
+            The action game genre encompasses a mix of combat, puzzles, and
+            strategic elements that require coordination and quick reflexes. It
+            features various sub-genres such as fighting games, beat 'em ups,
+            and shooters.
           </p>
           {loading ? (
             <div className="loading-circle">
@@ -121,14 +122,14 @@ const Gaming = React.memo(() => {
           ) : (
             <div className="game-wrapper">
               {games.map((myGames, index) => {
-                return <SingleGame key={index} {...myGames} />
+                return <SingleGame key={index} {...myGames} />;
               })}
             </div>
           )}
         </div>
       </section>
     </>
-  )
-})
+  );
+});
 
-export default Gaming
+export default Gaming;

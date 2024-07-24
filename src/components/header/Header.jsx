@@ -5,7 +5,7 @@ import { MdArrowDropDown } from "react-icons/md";
 import Blast from "../BlastAnimation/Blast";
 import "./header.scss";
 
-const nameArray = ["E", "m", "r", "a", "n"];
+const nameArray = ["F", "u", "a", "d"];
 const jobArray = [
   "F",
   "u",

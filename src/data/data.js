@@ -1,11 +1,19 @@
 import React from "react";
 import { IoLogoWordpress } from "react-icons/io";
+import { SiLeetcode } from "react-icons/si";
 import {
   SiDjango,
   SiReact,
   SiTypescript,
   SiDocker,
   SiJenkins,
+  SiDotnet,
+  SiDigitalocean,
+  SiFlutter,
+  SiStrapi,
+  SiMicrosoftsqlserver,
+  SiTailwindcss,
+  SiNextdotjs
 } from "react-icons/si";
 // react icons
 import { FiGrid, FiLinkedin } from "react-icons/fi";
@@ -52,12 +60,15 @@ const sideBarMenu = [
 const socialIcons = [
   {
     icon: <GrGithub className="icon switch__color" />,
-    url: "https://github.com/Emran-Y/",
+    url: "https://github.com/fuadmuhe12",
   },
-
   {
     icon: <FiLinkedin className="icon switch__color" />,
-    url: "https://www.linkedin.com/in/emran-yonas-230192232/",
+    url: "https://www.linkedin.com/in/fuadmuhe/",
+  },
+  {
+    icon: <SiLeetcode className="icon switch__color" />,
+    url: "https://leetcode.com/u/fuad_M/",
   },
 ];
 // programming lanuages (spanText), icons and url
@@ -73,6 +84,16 @@ const skillSet = [
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
+    icon: <SiSass className="skills-icon switch__color" />,
+    spanText: "SASS",
+    url: "https://sass-lang.com/documentation",
+  },
+  {
+    icon: <SiTailwindcss className="skills-icon switch__color" />,
+    spanText: "TAILWIND CSS",
+    url: "https://tailwindcss.com/docs",
+  },
+  {
     icon: <IoLogoJavascript className="skills-icon switch__color" />,
     spanText: "JAVASCRIPT",
     url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript",
@@ -83,34 +104,21 @@ const skillSet = [
     spanText: "TYPESCRIPT",
     url: "https://www.typescriptlang.org/docs/",
   },
-  // wordpress
   {
-    icon: <IoLogoWordpress className="skills-icon switch__color" />,
-    spanText: "WORDPRESS",
-    url: "https://wordpress.org/support/article/wordpress-lessons/",
+    icon: <RiReactjsLine className="skills-icon switch__color" />,
+    spanText: "REACT JS",
+    url: "https://reactjs.org/docs/getting-started.html",
   },
   {
-    icon: <SiDjango className="skills-icon switch__color" />,
-    spanText: "DJANGO",
-    url: "https://docs.djangoproject.com/en/stable/",
+    icon: <SiNextdotjs className="skills-icon switch__color" />,
+    spanText: "NEXT JS",
+    url: "https://nextjs.org/docs",
   },
   {
-    icon: <SiReact className="skills-icon switch__color" />,
-    spanText: "REACT NATIVE",
-    url: "https://reactnative.dev/docs/getting-started",
+    icon: <SiFlutter className="skills-icon switch__color" />,
+    spanText: "FLUTTER",
+    url: "https://flutter.dev/docs",
   },
-  {
-    icon: <SiSass className="skills-icon switch__color" />,
-    spanText: "SASS",
-    url: "",
-  },
-
-  {
-    icon: <BsBootstrapFill className="skills-icon switch__color" />,
-    spanText: "BOOTSTRAP",
-    url: "",
-  },
-
   {
     icon: <FaGit className="skills-icon switch__color" />,
     spanText: "GIT",
@@ -122,32 +130,29 @@ const skillSet = [
     url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
   },
   {
-    icon: <RiReactjsLine className="skills-icon switch__color" />,
-    spanText: "REACT JS",
-    url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started",
+    icon: <SiDotnet className="skills-icon switch__color" />,
+    spanText: ".NET",
+    url: "https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet",
   },
-
   {
-    icon: <FaNodeJs className="skills-icon switch__color" />,
-    spanText: "NODE",
-    url: "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs",
-  },
-
-  {
-    icon: <DiMongodb className="skills-icon switch__color" />,
-    spanText: "MONGO DB",
-    url: "",
+    icon: <SiStrapi className="skills-icon switch__color" />,
+    spanText: "STRAPI",
+    url: "https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html",
   },
   {
     icon: <SiExpress className="skills-icon switch__color" />,
     spanText: "EXPRESS JS",
     url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Express",
   },
-
   {
-    icon: <BsGoogle className="skills-icon switch__color" />,
-    spanText: "Googling",
-    url: "https://google.com",
+    icon: <DiMongodb className="skills-icon switch__color" />,
+    spanText: "MONGO DB",
+    url: "",
+  },
+  {
+    icon: <SiMicrosoftsqlserver className="skills-icon switch__color" />,
+    spanText: "SQL SERVER",
+    url: "https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15",
   },
   {
     icon: <SiDocker className="skills-icon switch__color" />,
@@ -158,6 +163,16 @@ const skillSet = [
     icon: <SiJenkins className="skills-icon switch__color" />,
     spanText: "CI/CD",
     url: "https://www.redhat.com/en/topics/devops/what-is-ci-cd",
+  },
+  {
+    icon: <BsGoogle className="skills-icon switch__color" />,
+    spanText: "Googling",
+    url: "https://google.com",
+  },
+  {
+    icon: <SiDigitalocean className="skills-icon switch__color" />,
+    spanText: "Digital Ocean",
+    url: "https://www.digitalocean.com/docs/",
   },
 ];
 

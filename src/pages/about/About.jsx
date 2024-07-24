@@ -47,25 +47,27 @@ const About = () => {
             </h2>
             <Fade bottom>
               <p>
-                I'm a full-stack developer with a background in computer
-                science, passionate about crafting innovative solutions. My
-                journey in technology spans web development and mobile app
-                development, driven by a love for creative problem-solving.
+                I'm a full-stack developer with a background in Software
+                Engineering, dedicated to creating innovative solutions. My
+                experience includes web and mobile app development, fueled by a
+                passion for creative problem-solving.
               </p>
             </Fade>
             <Fade bottom>
               <p>
-                I excel in web development, from front-end interfaces to
-                scalable back-end systems. I also thrive in mobile app development.
+                I excel in web development, handling everything from front-end
+                interfaces to scalable back-end systems. Additionally, I thrive
+                in mobile app development.
               </p>
             </Fade>
             <Fade bottom>
               <p>
-                I believe technology can drive positive change. I'm committed to
-                creating software that simplifies tasks and unlocks insights in
-                data. Eager for challenges and collaborations, I'm dedicated to
-                continual learning and growth in this ever-evolving tech
-                landscape. Let's shape the future together.
+                I’m passionate about harnessing technology to make a positive
+                impact. My goal is to develop software that streamlines tasks
+                and reveals valuable insights from data. Always eager for new
+                challenges and collaborations, I am committed to lifelong
+                learning and thriving in the dynamic tech world. Let’s innovate
+                and shape the future together.
               </p>
             </Fade>
             <Fade left>
