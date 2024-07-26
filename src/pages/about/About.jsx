@@ -1,5 +1,5 @@
 import React from "react";
-import myCV from "../../assets/images/Emran-Yonas.pdf";
+import myCV from "../../assets/images/Fuad's__CV.pdf";
 import Reveal from "react-reveal/Reveal";
 import Fade from "react-reveal/Fade";
 

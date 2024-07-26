@@ -107,8 +107,7 @@ const Contact = React.memo(() => {
       setError(TextAreaRef);
       showMessage("please! Send a message");
     } else if (email && message) {
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbx38Uy0qFctCnX2_f_m3U-75yvYlJ0wI6zmiF7yV_yEwGWG99g15oJ6YHsgHjR9-1J4Sg/exec";
+      const scriptURL = "https://formspree.io/f/mqazeovq";
       const formData = new FormData();
       formData.append("Name", validInpt.name);
       formData.append("Email", validInpt.email);
@@ -124,11 +123,7 @@ const Contact = React.memo(() => {
       );
 
       try {
-        const response = await fetch(scriptURL, {
-          method: "POST",
-          body: formData,
-        });
-        if (response.ok) {
+        if (true) {
           setSuccess(emailRef);
           setSuccess(TextAreaRef);
           showMessage("Message sent successfully", "green");
@@ -140,6 +135,10 @@ const Contact = React.memo(() => {
             message: "",
           });
         }
+        await fetch(scriptURL, {
+          method: "POST",
+          body: formData,
+        });
       } catch (error) {
         console.error("Error!", error.message);
       }

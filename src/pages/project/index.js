@@ -17,73 +17,65 @@ import {
 // projects data
 export const projects = [
   {
-    id: 2,
-    name: "Berkely Square Medical",
-    desc: "A website built for a largest private medical clinic in the UK, to boost their online presence and increase sales",
-    stack: "Wordpress custom theme, tailwindcss, google analytics",
-    imgUrl: prog9,
-    website: {
-      icon: <TbWorld />,
-      url: "https://www.berkeleysquaremedical.com/",
-    },
-  },
-  {
-    id: 2,
-    name: "Electic Car Charges UK",
-    desc: "A webiste innovatively crafted for electric car charging company",
-    stack: "Wordpress custom theme, tailwindcss, google analytics",
-    imgUrl: prog10,
-    website: {
-      icon: <TbWorld />,
-      url: "https://www.electriccarchargersuk.co.uk/",
-    },
-  },
-  {
-    id: 2,
-    name: "Electic Car Charges UK  Admin Panel",
-    desc: "A professional admin panel for ecc company to manage their users, products and orders",
-    stack: "Next JS, MYSQL,Prisma ORM, Tailwindcss",
-    imgUrl: prog8,
-    website: {
-      icon: <TbWorld />,
-      url: "https://ecc-admin-dashboard.vercel.app/",
-    },
-  },
-  {
-    id: 2,
+    id: 1,
     name: "Tufan Pharmacy",
     desc: "A professional website buile to boost companines online presence and increase sales",
     stack:
-      "Html, Css, Javascript, Tailwindcss,Strapi CMS,Express js, google analytics",
+      "Html, Css, Javascript, Tailwindcss,Strapi CMS,Express js, google analytics, Twak.to",
     imgUrl: prog7,
-
-    gitHubUrl: {
-      icon: <TbWorld />,
-      url: "https://tufahpharma.onrender.com/",
-    },
+  
     website: {
       icon: <TbWorld />,
-      url: "https://wonders-of-ethiopia.vercel.app/",
+      url: "https://seashell-app-nwtre.ondigitalocean.app/",
+    },
+  },
+  {
+    id: 4,
+    name: "Auu Connectify",
+    desc: "AAU Connectify is a project aimed at creating a centralized platform for the Addis Ababa University (AAU) community to enhance communication and connection.",
+    stack: "Flutter, Mongodb, Nest JS",
+    imgUrl: prog4,
+    website: {
+      icon: <TbWorld />,
+      url: "https://github.com/AAUConnectify/flutter-2024-AAUConnectify",
     },
   },
   {
     id: 2,
-    name: "Tour Booking",
-    desc: "A full stack Tour booking app where users can create accounts and book tours, also have an admin user who can add tours",
-    stack: "React JS, Node JS, Express JS, Mongo db",
-    imgUrl: prog1,
-
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: "https://github.com/47thommy/Wonders-of-Ethiopia.git",
-    },
+    name: "Artai Amharic Spell Checker",
+    desc: "The Artai Amharic Spell Checker is an advanced Chrome extension that enhances Amharic writing by providing real-time spell-checking across any website with a text area.",
+    stack: "Javascript, Chrome Extension API, Python, Tailwindcss",
+    imgUrl: prog2,
     website: {
       icon: <TbWorld />,
-      url: "https://wonders-of-ethiopia.vercel.app/",
+      url: "https://github.com/fuadmuhe12/Artai-Amharic-spell-checker",
     },
   },
   {
     id: 3,
+    name: "Library Management System",
+    desc: "A library management system is software for tracking library records, including book availability, issuance, returns, renewals, and late fines.",
+    stack: "ASP.NET, SQL Server, Entity Framework, Hangfire, Serilog, Swagger",
+    imgUrl: prog3,
+    website: {
+      icon: <TbWorld />,
+      url: "https://github.com/fuadmuhe12/Library-Management-System-BackEnd",
+    },
+  },
+  {
+    id: 5,
+    name: "Financail Stock",
+    desc: "The Financial Stock Backend is a .NET API that provides functionalities for managing financial stocks, comments, and user portfolios.",
+    stack: "ASP.NET, SQL Server, Entity Framework, Serilog, Swagger",
+    imgUrl: prog5,
+
+    website: {
+      icon: <TbWorld />,
+      url: "https://wonders-of-ethiopia.vercel.app/",
+    },
+  },
+/*   {
+    id: 6,
     name: "Game Oasis",
     desc: "a game discovery website with search and filter functionality",
     stack: "React JS, Typescript, external Api",
@@ -95,11 +87,11 @@ export const projects = [
       icon: <TbWorld />,
       url: "https://game-oasis.vercel.app/",
     },
-    imgUrl: prog2,
+    imgUrl: prog6,
   },
 
   {
-    id: 4,
+    id: 7,
     name: "Advanced dashboard App",
     desc: "Advanced dashboard application with dynamic data,charts,calendars etc",
     stack: "React JS",
@@ -111,10 +103,10 @@ export const projects = [
       icon: <TbWorld />,
       url: "https://advanced-dashboard-app.netlify.app",
     },
-    imgUrl: prog3,
+    imgUrl: prog1,
   },
   {
-    id: 5,
+    id: 8,
     name: "Class Room",
     desc: "Classroom is a one-stop shop for education and learning instructors manage, measure and enrich their learning experience",
     stack: "React JS expressjs Node js Mongodb",
@@ -126,10 +118,10 @@ export const projects = [
       icon: <TbWorld />,
       url: "https://classroom-blue-six.vercel.app/",
     },
-    imgUrl: prog4,
+    imgUrl: prog10,
   },
   {
-    id: 4,
+    id: 10,
     name: "Realstate Website",
     desc: "online realstate selling and renting website with google auth, rensing,buying or selling places contacting the house owner directly",
     stack: "React JS, Express JS Mongodb",
@@ -141,10 +133,10 @@ export const projects = [
       icon: <TbWorld />,
       url: "https://pizzashop-in-newyork.vercel.app/",
     },
-    imgUrl: prog5,
+    imgUrl: prog8,
   },
   {
-    id: 2,
+    id: 9,
     name: "The Quiditch Fitnessclub",
     desc: "workout tracking website that with user authentication, where each user can track their workout load, rep, sets to progressively overload",
     stack: "React JS Express JS Node JS mongodb",
@@ -156,6 +148,6 @@ export const projects = [
       icon: <TbWorld />,
       url: "https://the-quidditch-fitness-club.vercel.app/",
     },
-    imgUrl: prog6,
-  },
+    imgUrl: prog9,
+  }, */
 ];

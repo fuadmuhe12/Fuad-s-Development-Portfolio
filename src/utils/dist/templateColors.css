@@ -52,13 +52,13 @@
 #template-2 .search-icon,
 #template-2 .active-links,
 #template-2 .skill-card {
-  color: #35f588;
+  color: #2451cd;
 }
 #template-2 .active-temp {
-  border: 2px solid #35f588;
+  border: 2px solid #2451cd;
 }
 #template-2 .lower-logo-color {
-  fill: #35f588;
+  fill: #2451cd;
 }
 #template-2 .contact-button span.bg,
 #template-2 .skill-container::after,
@@ -66,11 +66,11 @@
 #template-2 .form-input-group span::after,
 #template-2 .blog-heading::after,
 #template-2 .blog-heading::before {
-  background-color: #35f588;
+  background-color: #2451cd;
 }
 #template-2 .contact-button span.base,
 #template-2 .input-search:focus {
-  border: 1px solid #35f588;
+  border: 1px solid #2451cd;
 }
 
 #template-3 .close-btn,
@@ -124,13 +124,13 @@
 #template-4 .arrow-icon,
 #template-4 .search-icon,
 #template-4 .active-links, #template-4 .skill-card {
-  color: #f05d46;
+  color: #9836d9;
 }
 #template-4 .active-temp {
-  border: 2px solid #f05d46;
+  border: 2px solid #9836d9;
 }
 #template-4 .lower-logo-color {
-  fill: #f05d46;
+  fill: #9836d9;
 }
 #template-4 .contact-button span.bg,
 #template-4 .skill-container::after,
@@ -138,11 +138,11 @@
 #template-4 .form-input-group span::after,
 #template-4 .blog-heading::after,
 #template-4 .blog-heading::before {
-  background-color: #f05d46;
+  background-color: #9836d9;
 }
 #template-4 .contact-button span.base,
 #template-4 .input-search:focus {
-  border: 2px solid #f05d46;
+  border: 2px solid #9836d9;
 }
 
 #template-5 .close-btn,
